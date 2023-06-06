@@ -9,6 +9,9 @@ function BookShow({book,onDelete}) {
     <div className='book-show'>
       {book.title}
       <div className='actions'>
+        <button className='edit'>
+           Edit
+        </button>
       <button className='delete'onClick={handleClick}>
         Delete
       </button>
