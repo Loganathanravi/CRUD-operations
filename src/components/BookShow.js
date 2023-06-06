@@ -7,7 +7,12 @@ function BookShow({book,onDelete}) {
     onDelete(book.id);
   };
 const handleEditClick=()=>{
-      setShowEdit(!setShowEdit);
+      setShowEdit(!showEdit);
+};
+let content=<h3>{book.title}</h3>
+if (showEdit){
+  content=<BookEdit/>;
+
 };
 
   return (
