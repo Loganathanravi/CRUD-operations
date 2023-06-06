@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import React from 'react';
 function BookShow({book,onDelete}) {
+  const [showEdit,setShowEdit]=useState(false);
   const handleClick=()=>{
     onDelete(book.id);
   };
