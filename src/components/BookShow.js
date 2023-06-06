@@ -17,7 +17,7 @@ if (showEdit){
 
   return (
     <div className='book-show'>
-      {book.title}
+     <div>{content}</div>
       <div className='actions'>
         <button className='edit' onClick={handleEditClick}>
            Edit
