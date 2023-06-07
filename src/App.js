@@ -30,7 +30,7 @@ setBooks(updatedBooks);
 };
   return (
     <div className='app'>
-      <BookList books={books} onDelete={deleteBookById}/>
+      <BookList onEdit={editBookById}books={books} onDelete={deleteBookById}/>
       <BookCreate onCreate={createBook}/>
     </div>
   );
