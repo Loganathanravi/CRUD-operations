@@ -16,7 +16,6 @@ const handleSubmit=(id,newTitle)=>{
 let content=<h3>{book.title}</h3>
 if (showEdit){
   content=<BookEdit onSubmit={handleSubmit} book={book}/>;
-
 };
 
   return (
@@ -36,7 +35,6 @@ if (showEdit){
         </div>
   )
 };
-
 export default BookShow;
 
 

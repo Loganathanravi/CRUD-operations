@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-
 function BookEdit({book,onSubmit}) {
    const [title,setTitle]=useState(book.title);
    const handleChange=(event)=>{
@@ -8,7 +7,6 @@ function BookEdit({book,onSubmit}) {
    };
   const handleSubmit=(event)=>{
     event.preventDefault();
-  
   onSubmit(book.id,title);
   };
   return <form onSubmit={handleSubmit} className='book-edit'>
@@ -16,7 +14,5 @@ function BookEdit({book,onSubmit}) {
     <input className='input' value={title} onChange={handleChange}/>
     <button className='button is primary'>Save</button>
   </form>
-    
 };
-
 export default BookEdit;
